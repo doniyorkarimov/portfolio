@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	<title>Asosiy oyna</title>
+{% endblock %}
+
+{% block content %}
+ <!-- Contact -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="gx-row d-flex justify-content-between gap-24">
+                    <div class="contact-infos">
+                        <h3 data-aos="fade-up">Biz ning manzillar </h3>
+                        <ul class="contact-details">
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-mail"></i>
+                                </div>
+                                <div class="right">
+                                    <span>connection</span>
+                                    <h4>doniyor2323a@gmail.com</h4>
+                                    <h4>doniyork513@gmail.com</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-phone"></i>
+                                </div>
+                                <div class="right">
+                                    <span>contact us</span>
+                                    <h4>+998 94 933 3214</h4>
+                    
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-pin-alt"></i>
+                                </div>
+                                <div class="right">
+                                    <span>address</span>
+                                    <h4>Namangan viloyati <br>Namangan shahri <br></h4>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 data-aos="fade-up">ijtimoiyi tarmoqda tuzatib boring</h3>
+                        <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                            <li><a class="shadow-box" href="https://facebook.com/profile.php?id=100088203762893&locale=ru_RU"><i class="iconoir-facebook"></i></a></li>
+                            <li><a class="shadow-box" href="https://t.me/doniyor_codes"><i class="iconoir-telegram"></i></a></li>
+                            <li><a class="shadow-box" href="https://instagram.com/_doniyorkarimov1"><i class="iconoir-instagram"></i></a></li>
+                            <li><a class="shadow-box" href="https://github.com/doniyorkarimov"><i class="iconoir-github"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" class="contact-form">
+                        <div class="shadow-box">
+                            <img src="{% static '/images/bg1.png' %}" alt="BG" class="bg-img">
+                            <img src="{% static '/images/icon3.png' %}" alt="Icon">
+                            <h1>Savollar  <span>bo'lsa</span></h1>
+                            <form method="POST" action="{% url 'contact' %}">
+                                {% csrf_token %}
+                                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                                    Your message was sent successfully.
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="full_name" id="full-name" placeholder="Name *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="Email *">
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" id="message" placeholder="Your Message *"></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <button class="theme-btn submit-btn" name="submit" type="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+{% endblock %}

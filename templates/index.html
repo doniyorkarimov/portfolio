@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block title %}
+	<title>Asosiy oyna</title>
+{% endblock %}
+
+{% block content %}
+	<!-- About -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-me-box shadow-box">
+                            <a class="overlay-link" href="about.html"></a>
+                            <img src="#" alt="BG" class="bg-img">
+                            <div class="img-box">
+                                <img src="{% static 'images/doniyor.jpg' %}" alt="About Me">
+                            </div>
+                            <div class="infos">
+                                <h4>Python Backend developer </h4>
+                                <h1>Karimov Doniyor.</h1>
+                                <p>I am a Backend developer</p>
+                                <a href="#" class="about-btn">
+                                    <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about-credentials-wrap">
+                            <div data-aos="zoom-in">
+                                <div class="banner shadow-box">
+                                    <div class="marquee">
+                                        <div>
+                                          <span>Karimov<b>Doniyor</b> <img src="{% static 'images/star1.svg' %}" alt="Star"> Karimov <b>Doniyor</b> <img src="{% static 'images/star1.svg' %}" alt="Star"> Karimov <b>Doniyor <img src="{% static 'images/star1.svg' %}" alt="Star">  <img src="{% static 'images/star1.svg' %}" alt="Star">  Backend <b>devoloper <img src="{% static 'images/star1.svg' %}" alt="Star"></span>
+                                        </div>
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="gx-row d-flex gap-24">
+                                <div data-aos="zoom-in">
+                                    <div class="about-crenditials-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="{% url 'credentials' %}"></a>
+                                        <img src="{% static 'images/bg1.png' %}" alt="BG" class="bg-img">
+                                        <img src="{% static 'images/sign.png' %}" alt="Sign">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h4>more about me</h4>
+                                                <h1>Qisqacha </h1>
+                                            </div>
+
+                                            <a href="{% url 'credentials' %}" class="about-btn">
+                                                <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div data-aos="zoom-in">
+                                    <div class="about-project-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="{% url 'works' %}"></a>
+                                        <img src="{% static 'images/bg1.png' %}" alt="BG" class="bg-img">
+                                        <img src="{% static 'images/my-works.png' %}" alt="My Works">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h4>dasturlashga oid</h4>
+                                                <h1>Postlarim</h1>
+                                            </div>
+
+                                            <a href="{% url 'works' %}" class="about-btn">
+                                                <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="blog-service-profile-wrap d-flex gap-24">
+                            <div data-aos="zoom-in">
+                                <div class="about-blog-box info-box shadow-box h-full">
+                                    <a href="#" class="overlay-link"></a>
+                                    <img src="{% static 'images/bg1.png' %}" alt="BG" class="bg-img">
+                                    <img src="{% static 'images/gfonts.png' %}" alt="GFonts">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>Blog</h4>
+                                            <h1>GFonts</h1>
+                                        </div>
+
+                                        <a href="{% url 'blog_list' %}" class="about-btn">
+                                            <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-services-box info-box shadow-box h-full">
+                                    <!-- <a href="service.html" class="overlay-link"></a> -->
+                                    <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                                        <li><a class="shadow-box" href="https://facebook.com/profile.php?id=100088203762893&locale=ru_RU"><i class="iconoir-facebook"></i></a></li>
+                                        <li><a class="shadow-box" href="https://t.me/doniyor_codes"><i class="iconoir-telegram"></i></a></li>
+                                        <li><a class="shadow-box" href="https://instagram.com/_doniyorkarimov1"><i class="iconoir-instagram"></i></a></li>
+                                        <li><a class="shadow-box" href="https://github.com/doniyorkarimov"><i class="iconoir-github"></i></a></li>
+            
+                                    </ul>
+                                    <br>
+                                
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>ijtimoiy tarmoqda tuzatib boring</h4>
+                                            <h1>Bizni </h1>
+                                        </div>
+<!-- 
+                                        <a href="service.html" class="about-btn">
+                                            <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                        </a> -->
+770117637
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-profile-box info-box shadow-box h-full">
+                                <div  class="video-container">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="{% static 'video/animatsion.mp4' %}" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+                </div>
+                <div class="row mt-24">
+                    <div class="container">
+                        <div class="col-md-6" data-aos="zoom-in">
+                            <div class="about-contact-box info-box shadow-box">
+                                <a class="overlay-link" href="{% url 'contact' %}"></a>
+                                <img src="{% static 'images/bg1.png' %}" alt="BG" class="bg-img">
+                                <img src="{% static 'images/icon2.png' %}" alt="Icon" class="star-icon">
+                                <h1>
+                                    Biz <br>
+                                    <span>bilan bog'lanish.</span>
+                                </h1>
+                                <a href="#" class="about-btn">
+                                    <img src="{% static 'images/icon.svg' %}" alt="Button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            
+                
+                </div>
+
+           
+                
+        </section>
+{% endblock %}

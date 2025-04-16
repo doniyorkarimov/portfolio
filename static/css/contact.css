@@ -1,0 +1,31 @@
+.about-contact-box {
+    width: 500px; /* Kengroq qilish */
+    height: 200px; /* Pastki qismini kichikroq qilish */
+    padding: 20px; /* Ichki bo‘sh joy */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-contact-box h1 {
+    font-size:24px; /* Matn o‘lchami */
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.about-contact-box span {
+    font-size: 24px; /* "bog'lanish" ni kattaroq qilish */
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.about-contact-container {
+    display: flex;
+    justify-content: center; /* Markazga joylash */
+    gap: 0px; /* Ikki blok orasidagi masofa */
+}
+

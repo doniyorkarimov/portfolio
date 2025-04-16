@@ -1,0 +1,19 @@
+.video-container {
+    width: 100%;
+    max-width: 500px; /* Videoning maksimal kengligi */
+    height: auto;
+    margin: auto; /* Markazga olish */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px; /* Yon tomonlarini yumaloq qilish */
+    background: black;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Videoni to‘g‘ri sig‘dirish */
+    border-radius: 50px; /* Videoning ham chetlarini yumaloq qilish */
+}
